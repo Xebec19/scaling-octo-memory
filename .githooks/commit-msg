@@ -1,3 +1,0 @@
-#!/bin/sh
-export TYPE=$(cut -d ':' -f1 < "$1" | xargs)
-(echo "$TYPE" | egrep  '^(feat|chore|docs|fix|refactor|style|test)$' > /dev/null) || (echo "Missing type feat|chore|docs|fix|refactor|style|test"; exit 1)
