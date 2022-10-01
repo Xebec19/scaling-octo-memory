@@ -1,11 +1,6 @@
 # scaling-octo-memory
 
 ## Git hooks set up
-Please write 
-```
-chmod +x .githooks/*
-```
-to make git hooks executable
 
 ## Prerequisites
 1. Docker
