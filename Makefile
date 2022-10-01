@@ -13,4 +13,7 @@ migrateup:
 migratedown:
 	migrate -path db/migration -database "postgresql://root:root@localhost:8081/pathshaala?sslmode=disable" -verbose down
 
+live:
+	sudo docker start pgdatabase ; nodemon
+
 .PHONY: postgres createdb dropdb migrateup migratedown
